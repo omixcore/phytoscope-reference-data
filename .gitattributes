@@ -1,0 +1,10 @@
+# Byte-for-byte preservation is mandatory: any CRLF/LF conversion would break SHA256SUMS.
+# This file MUST NOT be copied from the application repository, which uses
+# "* text=auto eol=lf" and would rewrite .tsv line endings on Windows checkout.
+* -text
+*.gz   binary
+*.tsv  -text
+*.json -text
+*.md   -text
+*.sh   text eol=lf
+*.ps1  text eol=crlf

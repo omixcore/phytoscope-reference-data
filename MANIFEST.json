@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T05:32:28Z",
+  "description": "Authoritative manifest of complete PhytoScope reference data removed from the software repository's current tree. Git history of the software repository is unchanged (plain git rm + one new commit; no history rewrite).",
+  "source_repository": "https://gitee.com/omixcore/phytoscope.git",
+  "baseline_commit": "8fd01ca",
+  "migration_commit": null,
+  "migration_commit_note": "剥离提交 hash 在提交产生后回填；提交前按 schema 约定置 null。本地目录已就绪，远端地址待用户提供。",
+  "mirror_repositories": {
+    "gitee": null,
+    "github": null,
+    "note": "两个空仓库地址待用户提供；两平台同名 phytoscope-reference-data，互为镜像，推送同一提交。脚本 scripts/init-and-push.* 只接收已存在的空仓库 URL，不调用任何平台 API。"
+  },
+  "path_mapping": {
+    "data_root_in_this_repository": "data/",
+    "original_root_in_app_repository": "src/main/resources/data/",
+    "rule": "data/<rel> corresponds byte-for-byte to src/main/resources/data/<rel> at baseline_commit"
+  },
+  "totals": { "files": 9, "bytes": 68518847 },
+  "files": [
+    {
+      "path": "data/case-studies/arabidopsis-atlas/expression.tsv",
+      "bytes": 845431,
+      "sha256": "bc4945fc578f2a339c50e84def5586c31be156c6f241eb968f3bc53a394aca85",
+      "source_url": "https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/E-MTAB-7978/E-MTAB-7978-tpms.tsv",
+      "source_release": "EBI Expression Atlas E-MTAB-7978 (DOI 10.1038/s41586-020-2094-2); 六组单 assay 条件，未做平均/填补",
+      "license": "需确认（EBI Expression Atlas / 原始文献使用条款以官方页面为准）",
+      "license_status": "needs_confirmation",
+      "provenance_ref": "case-studies/arabidopsis-atlas/manifest.json",
+      "baseline_blob": "8fd01ca:src/main/resources/data/case-studies/arabidopsis-atlas/expression.tsv"
+    },
+    {
+      "path": "data/species/arabidopsis/Chr1.gff3.gz",
+      "bytes": 4491636,
+      "sha256": "2b6b5ed92ef73ce54a15dd0b24093df9fc48e6e399920dc15d89e9f484af18c6",
+      "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
+      "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
+      "license": "需确认（TAIR / Araport11 使用条款以官方页面为准）",
+      "license_status": "needs_confirmation",
+      "provenance_ref": "species/arabidopsis/manifest.json",
+      "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr1.gff3.gz"
+    },
+    {
+      "path": "data/species/arabidopsis/Chr2.gff3.gz",
+      "bytes": 2755680,
+      "sha256": "dc095e384b422d9c38a8ec0fda78b5856492f9fabdd687b5ca4e1c77673fbec2",
+      "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
+      "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
+      "license": "需确认（TAIR / Araport11 使用条款以官方页面为准）",
+      "license_status": "needs_confirmation",
+      "provenance_ref": "species/arabidopsis/manifest.json",
+      "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr2.gff3.gz"
+    },
+    {
+      "path": "data/species/arabidopsis/Chr3.gff3.gz",
+      "bytes": 3382640,
+      "sha256": "8131f5a7e2aa4109be04c653347a8e41e4dcc35ed7ba6df565d2fd94300a8b82",
+      "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
+      "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
+      "license": "需确认（TAIR / Araport11 使用条款以官方页面为准）",
+      "license_status": "needs_confirmation",
+      "provenance_ref": "species/arabidopsis/manifest.json",
+      "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr3.gff3.gz"
+    },
+    {
+      "path": "data/species/arabidopsis/Chr4.gff3.gz",
+      "bytes": 2620794,
+      "sha256": "a61c4c3ce146895d4b4ccf792c11a28073265db3607edb1ba0acc5b8675d74bf",
+      "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
+      "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
+      "license": "需确认（TAIR / Araport11 使用条款以官方页面为准）",
+      "license_status": "needs_confirmation",
+      "provenance_ref": "species/arabidopsis/manifest.json",
+      "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr4.gff3.gz"
+    },
+    {
+      "path": "data/species/arabidopsis/Chr5.gff3.gz",
+      "bytes": 3820663,
+      "sha256": "ddbec8ec922a8ef6ed89420c281286b8f65c3bcc693762a0193cd73baa29f138",
+      "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
+      "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
+      "license": "需确认（TAIR / Araport11 使用条款以官方页面为准）",
+      "license_status": "needs_confirmation",
+      "provenance_ref": "species/arabidopsis/manifest.json",
+      "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr5.gff3.gz"
+    },
+    {
+      "path": "data/species/arabidopsis/TAIR10_genomic.fna.gz",
+      "bytes": 36462703,
+      "sha256": "80a13166003333ba4982b57abdb3d2b62037bc831f4da29ea378c1b776fff8e2",
+      "source_url": "https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-62/fasta/arabidopsis_thaliana/dna/Arabidopsis_thaliana.TAIR10.dna.toplevel.fa.gz",
+      "source_release": "Ensembl Plants release 62 / TAIR10",
+      "license": "需确认（Ensembl Plants / TAIR 使用条款以官方页面为准）",
+      "license_status": "needs_confirmation",
+      "provenance_ref": "species/arabidopsis/genome-sequence-provenance.json",
+      "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/TAIR10_genomic.fna.gz"
+    },
+    {
+      "path": "data/species/mint/mentha_longifolia_expression.tsv",
+      "bytes": 3394837,
+      "sha256": "8000e27d6b37d695c62b2ce0d261b65ecf9eece171405b4815faf58b685ee7f1",
+      "source_url": "https://doi.org/10.6084/m9.figshare.28457522",
+      "source_release": "4 叶 TPM 矩阵；原始文库/生成流程的确切来源未在主仓库 provenance 中明确记录，需确认",
+      "license": "需确认（该表达矩阵来源与许可未在主仓库 provenance 中明确记录）",
+      "license_status": "needs_confirmation",
+      "provenance_ref": "reference-provenance.json (mint-genome)",
+      "baseline_blob": "8fd01ca:src/main/resources/data/species/mint/mentha_longifolia_expression.tsv"
+    },
+    {
+      "path": "data/species/mint/mentha_longifolia_horsemint.gff3.gz",
+      "bytes": 10744463,
+      "sha256": "5c7d2fb3f7fdeb86dc84e4f383e0621211e270c2f3982e636adf9ba1ba37089f",
+      "source_url": "https://ndownloader.figshare.com/files/52521323",
+      "source_release": "Lieberman, Henry & Comai 2025, chromosome-scale diploid horsemint genome, figshare 10.6084/m9.figshare.28457522",
+      "license": "CC BY 4.0（主仓库 provenance 如此记录，仍需复核原始发布页）",
+      "license_status": "needs_confirmation",
+      "provenance_ref": "reference-provenance.json (mint-genome)",
+      "baseline_blob": "8fd01ca:src/main/resources/data/species/mint/mentha_longifolia_horsemint.gff3.gz"
+    }
+  ]
+}
