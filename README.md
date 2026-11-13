@@ -3,11 +3,13 @@
 本目录保存 PhytoScope 软件仓库**当前检出版本**中不再内置的完整参考数据。
 软件仓库只保留 KB 级小示例与可追溯索引；本仓库是完整数据的**权威副本**。
 
-> **交付状态（请如实转述）**：完整参考数据已迁移至独立数据仓库 —— **本地目录已就绪，
-> 远端地址待用户提供**。本仓库尚未推送到 gitee / github；两个平台各创建一个**空仓库**
-> （不要初始化 README）并把地址提供给维护者，或提供具备建仓权限的 token 后，
-> 由 `scripts/init-and-push.*` 完成首次提交与双端推送，再回填本文档与主仓库
-> `reference-provenance.json` 的 `repository` 字段。**应用内不提供下载**，不会自动取回数据。
+> **交付状态**：完整参考数据已迁移至独立数据仓库，并**已推送到 gitee 与 github 两个镜像**
+> （同名 `phytoscope-reference-data`，同一提交 `acac2cf`，互为镜像）。
+> - gitee：<https://gitee.com/omixcore/phytoscope-reference-data.git>
+> - github：`git@github-w1996jy:omixcore/phytoscope-reference-data.git`
+> 取回与校验方式见下文 §2。`MANIFEST.json` 与 `reference-provenance.json` 的
+> `repository` / `migration_commit` / `moved_at_commit` 字段均已回填。**应用内不提供下载**，
+> 不会自动取回数据。
 
 ---
 
@@ -17,7 +19,7 @@
 | --- | --- |
 | 软件仓库 | <https://gitee.com/omixcore/phytoscope.git> |
 | 数据被移走前的软件版本（`baseline_commit`） | `8fd01ca` |
-| 剥离提交（`migration_commit`） | 提交产生后回填；当前为 `null`（见 `MANIFEST.json`） |
+| 剥离提交（`migration_commit`） | `acac2cf7cebda6dbce331350ac330d960e58b689`（本仓库首提交，见 `MANIFEST.json`） |
 | 权威清单 | `MANIFEST.json`（9 条，逐文件 bytes / SHA-256 / 来源 / 许可 / baseline blob） |
 | 机读校验清单 | `SHA256SUMS.txt`（严格 `<64hex><两个空格><data/相对路径>`，LF） |
 | 文件总数 / 总字节 | **9 / 68,518,847 B** |
@@ -105,7 +107,7 @@ Sequences 与研究模块的序列提取在 `isLoaded() == false` 时显示明�
 > **远端仓库需用户事先在网页创建（或提供具备建仓权限的 token）**；脚本只接收
 > **已存在的空仓库 URL** 作为参数，不调用任何平台 API、不尝试创建仓库。
 > gitee 侧为 HTTPS + credential manager，github 侧为 SSH 别名，二者仅能推送到
-> 已存在仓库。当前 `MANIFEST.json` 的 `mirror_repositories.gitee/github` 均为 `null`。
+> 已存在仓库。当前 `MANIFEST.json` 的 `mirror_repositories.gitee/github` 已回填为两个镜像地址。
 
 ## 6. 体积与历史的严谨边界（不要夸大）
 
@@ -119,13 +121,10 @@ Sequences 与研究模块的序列提取在 `isLoaded() == false` 时显示明�
   `src/test/resources/non-model/vigna-umbellata/public-expression.tsv`、
   `examples/arabidopsis-atlas/expression.tsv`）本次**未动**，仅登记为已知遗留。
 
-## 7. 待用户配合事项单
+## 7. 后续维护事项
 
-1. 在 gitee 与 github **各创建一个空仓库**（建议同名 `phytoscope-reference-data`，
-   不要初始化 README），提供两个地址；或提供具备 `create_repo` 权限的 token。
-2. 运行 `scripts/init-and-push.* <gitee-url> <github-url>` 完成首次提交与双端推送。
-3. 把两个地址回填到本仓库 `MANIFEST.json` 的 `mirror_repositories`、
-   主仓库 `reference-provenance.json` 的 `external_repository`，并回填
-   `migration_commit` / `moved_at_commit`（当前为 `null`）。
-4. 需要复核的许可（尤其 `mentha_longifolia_expression.tsv` 的来源与许可，
-   以及 figshare 条目的 CC BY 4.0）按 `LICENSES.md` 逐条确认后再分发。
+1. ✅ 已在 gitee 与 github 各创建空仓库 `phytoscope-reference-data` 并完成首次提交与双端推送（同一提交 `acac2cf`，互为镜像）。
+2. ✅ 运行 `scripts/init-and-push.* <gitee-url> <github-url>` 完成首次提交与双端推送。
+3. ✅ 两个地址已回填到本仓库 `MANIFEST.json` 的 `mirror_repositories`、主仓库 `reference-provenance.json` 的 `external_repository`，并回填 `migration_commit` / `moved_at_commit`。
+4. ⏳ 需复核的许可（尤其 `mentha_longifolia_expression.tsv` 的来源与许可，
+   以及 figshare 条目的 CC BY 4.0）按 `LICENSES.md` 逐条确认后再分发（不影响当前交付）。
