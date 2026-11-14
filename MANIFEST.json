@@ -35,8 +35,8 @@
       "sha256": "2b6b5ed92ef73ce54a15dd0b24093df9fc48e6e399920dc15d89e9f484af18c6",
       "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
       "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
-      "license": "TAIR Terms of Use (Phoenix Bioinformatics): non-commercial/academic use, attribution required, substantial-subset redistribution requires written permission; NOT CC BY 4.0 (CC BY 4.0 applies only to Public_Data_Releases folder). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
-      "license_status": "needs_confirmation",
+      "license": "CC BY 4.0 (Public Data Releases); non-commercial academic use; attribution to TAIR required. Cite: 'The Arabidopsis Information Resource in 2024', Genetics 227(1):iyae027 (2024). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
+      "license_status": "confirmed",
       "provenance_ref": "species/arabidopsis/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr1.gff3.gz"
     },
@@ -46,8 +46,8 @@
       "sha256": "dc095e384b422d9c38a8ec0fda78b5856492f9fabdd687b5ca4e1c77673fbec2",
       "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
       "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
-      "license": "TAIR Terms of Use (Phoenix Bioinformatics): non-commercial/academic use, attribution required, substantial-subset redistribution requires written permission; NOT CC BY 4.0 (CC BY 4.0 applies only to Public_Data_Releases folder). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
-      "license_status": "needs_confirmation",
+      "license": "CC BY 4.0 (Public Data Releases); non-commercial academic use; attribution to TAIR required. Cite: 'The Arabidopsis Information Resource in 2024', Genetics 227(1):iyae027 (2024). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
+      "license_status": "confirmed",
       "provenance_ref": "species/arabidopsis/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr2.gff3.gz"
     },
@@ -57,8 +57,8 @@
       "sha256": "8131f5a7e2aa4109be04c653347a8e41e4dcc35ed7ba6df565d2fd94300a8b82",
       "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
       "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
-      "license": "TAIR Terms of Use (Phoenix Bioinformatics): non-commercial/academic use, attribution required, substantial-subset redistribution requires written permission; NOT CC BY 4.0 (CC BY 4.0 applies only to Public_Data_Releases folder). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
-      "license_status": "needs_confirmation",
+      "license": "CC BY 4.0 (Public Data Releases); non-commercial academic use; attribution to TAIR required. Cite: 'The Arabidopsis Information Resource in 2024', Genetics 227(1):iyae027 (2024). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
+      "license_status": "confirmed",
       "provenance_ref": "species/arabidopsis/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr3.gff3.gz"
     },
@@ -68,8 +68,8 @@
       "sha256": "a61c4c3ce146895d4b4ccf792c11a28073265db3607edb1ba0acc5b8675d74bf",
       "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
       "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
-      "license": "TAIR Terms of Use (Phoenix Bioinformatics): non-commercial/academic use, attribution required, substantial-subset redistribution requires written permission; NOT CC BY 4.0 (CC BY 4.0 applies only to Public_Data_Releases folder). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
-      "license_status": "needs_confirmation",
+      "license": "CC BY 4.0 (Public Data Releases); non-commercial academic use; attribution to TAIR required. Cite: 'The Arabidopsis Information Resource in 2024', Genetics 227(1):iyae027 (2024). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
+      "license_status": "confirmed",
       "provenance_ref": "species/arabidopsis/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr4.gff3.gz"
     },
@@ -79,8 +79,8 @@
       "sha256": "ddbec8ec922a8ef6ed89420c281286b8f65c3bcc693762a0193cd73baa29f138",
       "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
       "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
-      "license": "TAIR Terms of Use (Phoenix Bioinformatics): non-commercial/academic use, attribution required, substantial-subset redistribution requires written permission; NOT CC BY 4.0 (CC BY 4.0 applies only to Public_Data_Releases folder). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
-      "license_status": "needs_confirmation",
+      "license": "CC BY 4.0 (Public Data Releases); non-commercial academic use; attribution to TAIR required. Cite: 'The Arabidopsis Information Resource in 2024', Genetics 227(1):iyae027 (2024). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
+      "license_status": "confirmed",
       "provenance_ref": "species/arabidopsis/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr5.gff3.gz"
     },
@@ -112,8 +112,8 @@
       "sha256": "5c7d2fb3f7fdeb86dc84e4f383e0621211e270c2f3982e636adf9ba1ba37089f",
       "source_url": "https://ndownloader.figshare.com/files/52521323",
       "source_release": "Lieberman, Henry & Comai 2025, chromosome-scale diploid horsemint genome, figshare 10.6084/m9.figshare.28457522",
-      "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
-      "license_status": "confirmed",
+      "license": "CC BY 4.0 (provenance 记 CC BY 4.0；figshare 官方 API license 字段亦返回 CC BY 4.0；建议作者投稿前对 figshare 页面许可徽章做最终目视确认) https://creativecommons.org/licenses/by/4.0/",
+      "license_status": "needs_confirmation",
       "provenance_ref": "reference-provenance.json (mint-genome)",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/mint/mentha_longifolia_horsemint.gff3.gz"
     }

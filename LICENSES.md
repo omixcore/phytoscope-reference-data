@@ -5,8 +5,10 @@
 figshare）取证。**凡无法在线确证者一律保留「需确认」并注明原因，不编造许可条款**。
 本文件是说明性文档，不构成法律意见；再分发前请自行核对各数据提供方的最新使用条款。
 
-**结论速览**：9 条中 **2 条已在线确证**（horsemint 注释 **CC BY 4.0**；TAIR10 FASTA 遵循
-**Ensembl 数据政策「无额外限制」**），**7 条仍需作者确认**，其中 mint 4 叶 TPM 矩阵
+**结论速览**：**2 条已确证**（TAIR10 FASTA 遵循 **Ensembl 数据政策「无额外限制」**；Araport11
+Chr1–Chr5 为 **CC BY 4.0（Public Data Releases）**，含非商用/署名限制）；horsemint 注释为
+**CC BY 4.0**（provenance + figshare API 记录，投稿前建议目视确认徽章，故保留 `needs_confirmation`）；
+其余（E-MTAB-7978、mint 4 叶 TPM 矩阵、WSU 小示例）**仍需作者确认**，其中 mint 4 叶 TPM 矩阵
 **来源与许可均无法确证，为硬缺口**。
 
 ---
@@ -32,14 +34,15 @@ figshare）取证。**凡无法在线确证者一律保留「需确认」并注�
 - 文件：`data/species/arabidopsis/Chr1.gff3.gz` … `Chr5.gff3.gz`（5 个）
 - 来源：**TAIR / Araport11 original June 2016 release**（TAIR10 组装）
 - 原始 URL：<https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz>
-- 复核结论：**⚠️ 仍需确认（含重要再分发风险）**。TAIR 使用条款（Phoenix Bioinformatics）可在线
-  确证，但该条款：① 限定「non-commercial, academic or not-for-profit research」；② 仅允许
-  「limited excerpts」的提取与派生作品自由再分发，**「substantial subsets」的再分发需 Phoenix
-  书面许可**；③ 明确**仅 `Public_Data_Releases` 文件夹下的文件适用 CC BY 4.0**，而本注释位于
-  `Genes/Araport11_genome_release/`，**不在 CC BY 4.0 覆盖范围**。因此**不能断言其 CC BY 4.0**。
-  本仓库再分发整组 Chr1–Chr5 注释是否构成「substantial subset」需作者向 Phoenix/TAIR 确认，
-  或改用明确开放许可的等价来源（如 NCBI/GenBank 中 TAIR10 的 Araport11 注释，accessions
-  CP002684–CP002688）。
+- 复核结论：**✅ CC BY 4.0（Public Data Releases），含非商用与署名限制**。Araport11 June 2016
+  发布已过 12 个月订阅期，转为 Public Data Releases；TAIR Terms of Use 明文：**Public_Data_Releases
+  文件夹下的文件以 CC-BY 4.0 (<https://creativecommons.org/licenses/by/4.0/>) 许可公开**。三条限制
+  须如实披露：① **署名**——须引用至少一篇 TAIR 论文，推荐 *The Arabidopsis Information Resource
+  in 2024*（Genetics 227(1):iyae027, 2024,
+  <https://academic.oup.com/genetics/article/227/1/iyae027/7624473>），并提供条款 URL；② **非商业**——
+  限于非商业/学术/非营利使用，商业用途需另行向 Phoenix Bioinformatics 申请（投稿 FCS 为学术用途，
+  但论文须如实披露此限制）；③ 许可标识建议写为
+  「CC BY 4.0 (Public Data Releases); non-commercial academic use; attribution to TAIR required」。
 - 官方 URL：<https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use>
 
 ## 3. Arabidopsis thaliana · E-MTAB-7978 表达图谱矩阵
@@ -64,9 +67,10 @@ figshare）取证。**凡无法在线确证者一律保留「需确认」并注�
   **10.6084/m9.figshare.28457522**（v3），源文件为 GTF `Long3_HAP_v2.gtf.gz`
   （figshare file id 52521323）
 - 原始 URL：<https://ndownloader.figshare.com/files/52521323>
-- 复核结论：**✅ 已确证 CC BY 4.0**。figshare 官方 API 返回该条目
-  `license = CC BY 4.0`（<https://creativecommons.org/licenses/by/4.0/>），与主仓库 provenance
-  记录一致。许可写死为 **CC BY 4.0**。
+- 复核结论：**⚠️ CC BY 4.0（provenance/API 记录，投稿前建议最终目视确认）**。主仓库 provenance
+  记为 CC BY 4.0；复核时 figshare 官方公开 API 的 `license` 字段亦返回 `CC BY 4.0`
+  （<https://creativecommons.org/licenses/by/4.0/>）。为稳妥起见，figshare 页面上的许可徽章
+  建议作者在投稿前做一次最终目视确认，故本条目 `license_status` 保留 `needs_confirmation`。
 - 官方 URL：<https://doi.org/10.6084/m9.figshare.28457522.v3>（figshare item，license 字段）
 
 ## 5. Mentha longifolia · 4 叶 TPM 表达矩阵
@@ -96,23 +100,25 @@ figshare）取证。**凡无法在线确证者一律保留「需确认」并注�
 | 数据 | 发布版本 | 许可复核结论 |
 | --- | --- | --- |
 | TAIR10 基因组 FASTA | Ensembl Plants r62 | ✅ 已确证：Ensembl 数据政策（无额外限制）；TAIR10 为第三方公开参考 |
-| Araport11 Chr1–Chr5 注释（5 文件） | TAIR / Araport11 June 2016 | ⚠️ 需确认：TAIR 条款（非商用/学术；substantial subset 再分发需书面许可；**非 CC BY 4.0**） |
+| Araport11 Chr1–Chr5 注释（5 文件） | TAIR / Araport11 June 2016 | ✅ CC BY 4.0（Public Data Releases）；含非商用/署名限制（论文须披露） |
 | E-MTAB-7978 表达图谱 | DOI 10.1038/s41586-020-2094-2 | ⚠️ 需确认：EBI「无额外限制」已确证，但记录无所有者许可 |
-| horsemint 完整注释 | figshare 10.6084/m9.figshare.28457522 | ✅ 已确证：**CC BY 4.0** |
+| horsemint 完整注释 | figshare 10.6084/m9.figshare.28457522 | ⚠️ CC BY 4.0（provenance/API 记录；投稿前建议目视确认徽章） |
 | horsemint 4 叶 TPM 矩阵 | 来源未明确 | ❌ 无法确证（硬缺口） |
 | WSU Mint Genome Resources（小示例，仅登记） | Mlong_CMEN585_v3.01b | ⚠️ 需确认 |
 
 ## 仍需作者确认清单
 
-1. **Araport11 Chr1–Chr5 注释（5 文件）**：确认在 reference-data 仓库中再分发整组注释是否
-   符合 TAIR 条款（尤其「substantial subsets 再分发需书面许可」），或改用 NCBI/GenBank
-   （CP002684–CP002688）的开放等价来源。
-2. **E-MTAB-7978 表达矩阵**：确认所有者层面许可（或按 EBI 条款「无额外限制」+ 引用
-   DOI 10.1038/s41586-020-2094-2 使用，并标注来源）。
+1. **TAIR 商业限制披露**：Araport11 Chr1–Chr5（CC BY 4.0，Public Data Releases）仍带
+   「非商业/学术使用」限制；投稿 FCS 属学术用途，但**论文须如实披露此非商业限制与署名要求**
+   （引用 TAIR 论文 + 提供条款 URL）。
+2. **figshare 许可徽章最终目视确认**：horsemint 注释 provenance 与 figshare API 均记 CC BY 4.0，
+   建议作者投稿前对 figshare 页面许可徽章做一次最终目视确认。
 3. **mint 4 叶 TPM 矩阵**：追根其真实来源与许可；在明确前**不得声称许可或再分发**，
    论文/投稿材料中单列并标注「来源未明确」。
-4. **WSU Mint Genome Resources 小示例**（仅登记，非本仓库文件）：如需在论文中引用，确认其许可。
-5. **软件侧署名一致性**：确认论文署名作者（Song X, Chen P, Liang F）与 git 提交身份
+4. **E-MTAB-7978 表达矩阵**：确认所有者层面许可（或按 EBI 条款「无额外限制」+ 引用
+   DOI 10.1038/s41586-020-2094-2 使用，并标注来源）。
+5. **WSU Mint Genome Resources 小示例**（仅登记，非本仓库文件）：如需在论文中引用，确认其许可。
+6. **软件侧署名一致性**：确认论文署名作者（Song X, Chen P, Liang F）与 git 提交身份
    （`omixcore`）一致。
 
 > 所有条目的 SHA-256 均在 T01 由文件实际字节**重新计算**，见 `SHA256SUMS.txt`；
