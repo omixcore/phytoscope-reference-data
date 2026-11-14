@@ -17,7 +17,17 @@
     "rule": "data/<rel> corresponds byte-for-byte to src/main/resources/data/<rel> at baseline_commit"
   },
   "totals": { "files": 9, "bytes": 68518847 },
-  "license_decision_summary": {"confirmed": 1, "needs_confirmation": 8, "decisions_finalized": true, "totals_unchanged": true, "note": "8 条三选一结论已定稿，但结论 ≠ 已获授权；8 条 license_status 保持 needs_confirmation，conclusion_is_authorization=false，baseline_changed=false。Deposit B license 必须选 Other（多许可）并引用 LICENSES.md，不得归并 CC BY 4.0。"},
+  "archive_public_availability_statement": "现有数据归档包不构成已具备公开再分发条件的证据；8 项许可未落定前，Deposit B 不得设为公开可下载。",
+  "public_deposit_scope": {
+    "public_deposit_files": 8,
+    "public_deposit_bytes": 65124010,
+    "withheld_files": 1,
+    "withheld_paths": ["data/species/mint/mentha_longifolia_expression.tsv"],
+    "arithmetic_check": "68,518,847 - 3,394,837 = 65,124,010",
+    "totals_unchanged_note": "totals 仍为 9 个文件 / 68,518,847 B，SHA256SUMS.txt 仍为 9 行，data/** 字节未变；变化仅是「哪些文件进入公开归档包」。被扣留的 1 个文件保留在仓库中供内部复现，不进入公开归档包。",
+    "not_a_license_clearance": true
+  },
+  "license_decision_summary": {"confirmed": 1, "needs_confirmation": 8, "decisions_finalized": true, "totals_unchanged": true, "note": "8 条三选一结论已定稿，但结论 ≠ 已获授权；8 条 license_status 保持 needs_confirmation，conclusion_is_authorization=false，baseline_changed=false。Deposit B license 必须选 Other（多许可）并引用 LICENSES.md，不得归并 CC BY 4.0。薄荷 4 叶 TPM 的溯源已确证（见 PROVENANCE-mint-tpm.md），但上游 INSDC 读段无明示许可，故改为 withdrawn_from_public_deposit：不进公开归档包，不再属于「来源无法确证」。"},
   "files": [
     {
       "path": "data/case-studies/arabidopsis-atlas/expression.tsv",
@@ -142,17 +152,62 @@
       "path": "data/species/mint/mentha_longifolia_expression.tsv",
       "bytes": 3394837,
       "sha256": "8000e27d6b37d695c62b2ce0d261b65ecf9eece171405b4815faf58b685ee7f1",
-      "source_url": "https://doi.org/10.6084/m9.figshare.28457522",
-      "source_release": "4 叶 TPM 矩阵；原始文库/生成流程的确切来源未在主仓库 provenance 中明确记录，需确认",
-      "license": "来源与许可无法确证，需作者追根（source_url 指向的 figshare DOI 为基因组组装页，不含该 TPM 矩阵文件）",
+      "source_url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR324/039/SRR32469939/SRR32469939_1.fastq.gz",
+      "previous_source_url": "https://doi.org/10.6084/m9.figshare.28457522",
+      "source_url_note": "2026-11-14 更正：原 source_url 指向 figshare 基因组组装页，该页文件清单中不含任何 TPM/表达矩阵，属错误溯源。本矩阵并非下载所得，而是本项目用 SRP565976 的 4 个叶片文库读段 + 本项目 horsemint 注释自行计算的衍生数据；此处填的是实际下载读段所用的 ENA URL（4 个 run 之一，其余为 SRR32469940/941/942 的同构 URL）。",
+      "source_release": "本项目衍生数据：NCBI BioProject SRP565976（SRA/ENA 公开档案）4 个 Mentha longifolia 叶片文库 SRR32469939/940/941/942（基因型 PI 557769）→ minimap2 2.28 -ax splice 比对到 Long3_HAP_v2 单倍型 A 12 条染色体 → featureCounts 2.0.6 基因层级计数 → 自写 make_tpm.py 归一化 TPM",
+      "license": "衍生数据的许可未落定：上游注释与基因组均为 CC BY 4.0（figshare 10.6084/m9.figshare.28457522.v3），但上游 RNA-seq 读段为 INSDC 公开档案数据、ENA/SRA 记录无 license 字段，无明示再分发许可可确证。本项目不转发原始读段，仅分发逐基因 TPM 汇总值。",
       "license_status": "needs_confirmation",
-      "license_decision": "replace_required",
+      "license_decision": "withdrawn_pending_upstream_confirmation",
       "license_decision_date": "2026-11-14",
-      "official_terms_url": "N/A（来源与许可均无法确证，不臆造 source_url / 条款 URL）",
+      "distribution_status": "withdrawn_from_public_deposit",
+      "distribution_status_note": "不进入 Zenodo Deposit B 公开归档包；磁盘文件保留、字节不动，供内部复现与审计。totals 与 SHA256SUMS.txt 不变。",
+      "provenance_status": "established",
+      "provenance_ref": "PROVENANCE-mint-tpm.md",
+      "provenance": {
+        "kind": "derived_in_house",
+        "not_downloaded": true,
+        "upstream_reads": {
+          "bioproject": "SRP565976",
+          "runs": ["SRR32469939", "SRR32469940", "SRR32469941", "SRR32469942"],
+          "genotype": "PI 557769",
+          "tissue": "leaf",
+          "archive": "INSDC / ENA mirror ftp.sra.ebi.ac.uk",
+          "license_field_present": false
+        },
+        "upstream_annotation": {
+          "file": "data/species/mint/mentha_longifolia_horsemint.gff3.gz",
+          "license": "CC BY 4.0",
+          "doi": "10.6084/m9.figshare.28457522.v3"
+        },
+        "upstream_genome": {
+          "file": "mint_A.fa (Long3_HAP_v2 haplotype A, Chr1-Chr12)",
+          "license": "CC BY 4.0",
+          "doi": "10.6084/m9.figshare.28457522.v3"
+        },
+        "pipeline": {
+          "annotation_to_gtf": "mint_expr/build_gtf.py",
+          "clean": "mint_expr/sanitize_gz.py",
+          "align": "minimap2 -ax splice -t 24 -k 14 --secondary=no --MD genome/mint_A.fa",
+          "count": "featureCounts -T 8 -s 0 -a genome/mint.gtf",
+          "tpm": "mint_expr/make_tpm.py  (rpk = count/(merged exon length/1000); scale to 1e6)",
+          "driver": "mint_expr/run_final.sh"
+        },
+        "verification": {
+          "gene_ids_match_annotation": true,
+          "gene_id_set_difference": 0,
+          "gene_count": 94883,
+          "exon_rows_in_gtf": 355918,
+          "transcript_rows_in_gtf": 102705,
+          "tpm_column_sums": [1000000.0, 1000000.0, 1000000.0, 1000000.0],
+          "byte_identical_to": "dist/薄荷完整数据/07_表达矩阵/mint_expression_tpm.tsv"
+        },
+        "reproducibility_limit": "逐字节复现依赖 minimap2/samtools/featureCounts 具体版本与线程设置；结构性质（基因集、ΣTPM=1e6）可复现，个别基因 TPM 末位可能不同。"
+      },
+      "official_terms_url": "N/A（读段层无 license 字段；不臆造条款 URL。上游 CC BY 4.0 条款：https://creativecommons.org/licenses/by/4.0/）",
       "author_action_required": "A4",
       "conclusion_is_authorization": false,
       "baseline_changed": false,
-      "provenance_ref": "reference-provenance.json (mint-genome)",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/mint/mentha_longifolia_expression.tsv"
     },
     {

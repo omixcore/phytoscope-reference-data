@@ -1,5 +1,20 @@
 # PhytoScope 参考数据仓库（phytoscope-reference-data）
 
+> ## ⚠️ 公开可用性声明（必读）
+>
+> **现有数据归档包不构成已具备公开再分发条件的证据；8 项许可未落定前，Deposit B 不得设为公开可下载。**
+>
+> - 本仓库 **9 个数据文件 / 68,518,847 B 中，仅 1 个已确证可直接再分发**（horsemint 注释，
+>   CC BY 4.0）；**8 个许可未落定**（7 个需书面许可或替换、1 个暂不进公开包）。
+> - **Zenodo 归档状态保持「待发布」**，`{{DATA_DOI}}` 等占位符**保持未回填**。
+> - **公开归档包为 8 个文件 / 65,124,010 B**：`data/species/mint/mentha_longifolia_expression.tsv`
+>   **不进入公开归档包**（`distribution_status: withdrawn_from_public_deposit`），但仍保留在本仓库
+>   供内部复现与审计。仓库 `totals`（9 / 68,518,847 B）与 `SHA256SUMS.txt`（9 行）**不变**。
+> - 逐条条件见 `LICENSES.md`（§0 决策表、§7 **可执行再分发条件表**）；
+>   薄荷 TPM 的可复核溯源见 `PROVENANCE-mint-tpm.md`。
+>
+> 本仓库内容可自由用于**内部研究与审计**；**公开再分发**须先落实上述许可。
+
 本目录保存 PhytoScope 软件仓库**当前检出版本**中不再内置的完整参考数据。
 软件仓库只保留 KB 级小示例与可追溯索引；本仓库是完整数据的**权威副本**。
 
@@ -22,8 +37,10 @@
 | 剥离提交（`migration_commit`） | `acac2cf7cebda6dbce331350ac330d960e58b689`（本仓库首提交，见 `MANIFEST.json`） |
 | 权威清单 | `MANIFEST.json`（9 条，逐文件 bytes / SHA-256 / 来源 / 许可 / baseline blob） |
 | 机读校验清单 | `SHA256SUMS.txt`（严格 `<64hex><两个空格><data/相对路径>`，LF） |
-| 文件总数 / 总字节 | **9 / 68,518,847 B** |
-| 许可说明 | `LICENSES.md`（逐条来源，不确定处标「需确认」） |
+| 文件总数 / 总字节 | **9 / 68,518,847 B**（仓库口径，不变） |
+| **公开归档包（Deposit B）** | **8 个文件 / 65,124,010 B**（扣留 `mentha_longifolia_expression.tsv`） |
+| 许可说明 | `LICENSES.md`（逐条来源 + §7 可执行再分发条件表，不确定处标「需确认」） |
+| 薄荷 TPM 溯源 | `PROVENANCE-mint-tpm.md`（可复核的完整证据链） |
 
 **路径映射**：本仓库 `data/<rel>` 与主仓库
 `src/main/resources/data/<rel>` 在 `8fd01ca` 处**逐字节一致**。
@@ -126,5 +143,9 @@ Sequences 与研究模块的序列提取在 `isLoaded() == false` 时显示明�
 1. ✅ 已在 gitee 与 github 各创建空仓库 `phytoscope-reference-data` 并完成首次提交与双端推送（同一提交 `acac2cf`，互为镜像）。
 2. ✅ 运行 `scripts/init-and-push.* <gitee-url> <github-url>` 完成首次提交与双端推送。
 3. ✅ 两个地址已回填到本仓库 `MANIFEST.json` 的 `mirror_repositories`、主仓库 `reference-provenance.json` 的 `external_repository`，并回填 `migration_commit` / `moved_at_commit`。
-4. ⏳ 需复核的许可（尤其 `mentha_longifolia_expression.tsv` 的来源与许可，
-   以及 figshare 条目的 CC BY 4.0）按 `LICENSES.md` 逐条确认后再分发（不影响当前交付）。
+4. ⏳ 需复核的许可按 `LICENSES.md` 逐条确认后再分发（不影响当前交付）：
+   - **7 个文件**（Araport11 Chr1–Chr5、TAIR10 FASTA、E-MTAB-7978 表达矩阵）需**书面许可或替换**，
+     可执行条件表见 `LICENSES.md` §7；
+   - `mentha_longifolia_expression.tsv` **溯源已确证**（本项目自行计算的衍生数据，见
+     `PROVENANCE-mint-tpm.md`），但上游 INSDC 读段无明示许可 → **不进入公开归档包**；
+   - **8 项全部落定前，Zenodo Deposit B 不得设为公开可下载。**
