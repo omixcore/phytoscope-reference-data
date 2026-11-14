@@ -24,7 +24,7 @@
       "sha256": "bc4945fc578f2a339c50e84def5586c31be156c6f241eb968f3bc53a394aca85",
       "source_url": "https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/E-MTAB-7978/E-MTAB-7978-tpms.tsv",
       "source_release": "EBI Expression Atlas E-MTAB-7978 (DOI 10.1038/s41586-020-2094-2); 六组单 assay 条件，未做平均/填补",
-      "license": "需确认（EBI Expression Atlas / 原始文献使用条款以官方页面为准）",
+      "license": "EMBL-EBI: no additional restrictions on contributed data beyond the data owner, attribution expected (https://www.ebi.ac.uk/about/terms-of-use); no explicit data-owner license in the E-MTAB-7978 record. DOI 10.1038/s41586-020-2094-2",
       "license_status": "needs_confirmation",
       "provenance_ref": "case-studies/arabidopsis-atlas/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/case-studies/arabidopsis-atlas/expression.tsv"
@@ -35,7 +35,7 @@
       "sha256": "2b6b5ed92ef73ce54a15dd0b24093df9fc48e6e399920dc15d89e9f484af18c6",
       "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
       "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
-      "license": "需确认（TAIR / Araport11 使用条款以官方页面为准）",
+      "license": "TAIR Terms of Use (Phoenix Bioinformatics): non-commercial/academic use, attribution required, substantial-subset redistribution requires written permission; NOT CC BY 4.0 (CC BY 4.0 applies only to Public_Data_Releases folder). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
       "license_status": "needs_confirmation",
       "provenance_ref": "species/arabidopsis/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr1.gff3.gz"
@@ -46,7 +46,7 @@
       "sha256": "dc095e384b422d9c38a8ec0fda78b5856492f9fabdd687b5ca4e1c77673fbec2",
       "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
       "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
-      "license": "需确认（TAIR / Araport11 使用条款以官方页面为准）",
+      "license": "TAIR Terms of Use (Phoenix Bioinformatics): non-commercial/academic use, attribution required, substantial-subset redistribution requires written permission; NOT CC BY 4.0 (CC BY 4.0 applies only to Public_Data_Releases folder). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
       "license_status": "needs_confirmation",
       "provenance_ref": "species/arabidopsis/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr2.gff3.gz"
@@ -57,7 +57,7 @@
       "sha256": "8131f5a7e2aa4109be04c653347a8e41e4dcc35ed7ba6df565d2fd94300a8b82",
       "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
       "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
-      "license": "需确认（TAIR / Araport11 使用条款以官方页面为准）",
+      "license": "TAIR Terms of Use (Phoenix Bioinformatics): non-commercial/academic use, attribution required, substantial-subset redistribution requires written permission; NOT CC BY 4.0 (CC BY 4.0 applies only to Public_Data_Releases folder). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
       "license_status": "needs_confirmation",
       "provenance_ref": "species/arabidopsis/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr3.gff3.gz"
@@ -68,7 +68,7 @@
       "sha256": "a61c4c3ce146895d4b4ccf792c11a28073265db3607edb1ba0acc5b8675d74bf",
       "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
       "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
-      "license": "需确认（TAIR / Araport11 使用条款以官方页面为准）",
+      "license": "TAIR Terms of Use (Phoenix Bioinformatics): non-commercial/academic use, attribution required, substantial-subset redistribution requires written permission; NOT CC BY 4.0 (CC BY 4.0 applies only to Public_Data_Releases folder). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
       "license_status": "needs_confirmation",
       "provenance_ref": "species/arabidopsis/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr4.gff3.gz"
@@ -79,7 +79,7 @@
       "sha256": "ddbec8ec922a8ef6ed89420c281286b8f65c3bcc693762a0193cd73baa29f138",
       "source_url": "https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz",
       "source_release": "TAIR / Araport11 original June 2016 release (TAIR10 assembly)",
-      "license": "需确认（TAIR / Araport11 使用条款以官方页面为准）",
+      "license": "TAIR Terms of Use (Phoenix Bioinformatics): non-commercial/academic use, attribution required, substantial-subset redistribution requires written permission; NOT CC BY 4.0 (CC BY 4.0 applies only to Public_Data_Releases folder). https://phoenixbioinformatics.atlassian.net/wiki/spaces/COM/pages/42216430/TAIR+Terms+of+Use",
       "license_status": "needs_confirmation",
       "provenance_ref": "species/arabidopsis/manifest.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/Chr5.gff3.gz"
@@ -90,8 +90,8 @@
       "sha256": "80a13166003333ba4982b57abdb3d2b62037bc831f4da29ea378c1b776fff8e2",
       "source_url": "https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-62/fasta/arabidopsis_thaliana/dna/Arabidopsis_thaliana.TAIR10.dna.toplevel.fa.gz",
       "source_release": "Ensembl Plants release 62 / TAIR10",
-      "license": "需确认（Ensembl Plants / TAIR 使用条款以官方页面为准）",
-      "license_status": "needs_confirmation",
+      "license": "Ensembl data policy — no restrictions on access/use of Ensembl-provided data; TAIR10 assembly is third-party (AGI/INSDC public reference), attribution expected. https://www.ensembl.org/info/about/legal/disclaimer.html",
+      "license_status": "confirmed",
       "provenance_ref": "species/arabidopsis/genome-sequence-provenance.json",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/arabidopsis/TAIR10_genomic.fna.gz"
     },
@@ -101,7 +101,7 @@
       "sha256": "8000e27d6b37d695c62b2ce0d261b65ecf9eece171405b4815faf58b685ee7f1",
       "source_url": "https://doi.org/10.6084/m9.figshare.28457522",
       "source_release": "4 叶 TPM 矩阵；原始文库/生成流程的确切来源未在主仓库 provenance 中明确记录，需确认",
-      "license": "需确认（该表达矩阵来源与许可未在主仓库 provenance 中明确记录）",
+      "license": "来源与许可无法确证，需作者追根（source_url 指向的 figshare DOI 为基因组组装页，不含该 TPM 矩阵文件）",
       "license_status": "needs_confirmation",
       "provenance_ref": "reference-provenance.json (mint-genome)",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/mint/mentha_longifolia_expression.tsv"
@@ -112,8 +112,8 @@
       "sha256": "5c7d2fb3f7fdeb86dc84e4f383e0621211e270c2f3982e636adf9ba1ba37089f",
       "source_url": "https://ndownloader.figshare.com/files/52521323",
       "source_release": "Lieberman, Henry & Comai 2025, chromosome-scale diploid horsemint genome, figshare 10.6084/m9.figshare.28457522",
-      "license": "CC BY 4.0（主仓库 provenance 如此记录，仍需复核原始发布页）",
-      "license_status": "needs_confirmation",
+      "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+      "license_status": "confirmed",
       "provenance_ref": "reference-provenance.json (mint-genome)",
       "baseline_blob": "8fd01ca:src/main/resources/data/species/mint/mentha_longifolia_horsemint.gff3.gz"
     }
