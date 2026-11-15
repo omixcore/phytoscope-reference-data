@@ -7,9 +7,11 @@
 > - 本仓库 **9 个数据文件 / 68,518,847 B 中，仅 1 个已确证可直接再分发**（horsemint 注释，
 >   CC BY 4.0）；**8 个许可未落定**（7 个需书面许可或替换、1 个暂不进公开包）。
 > - **Zenodo 归档状态保持「待发布」**，`{{DATA_DOI}}` 等占位符**保持未回填**。
-> - **公开归档包为 8 个文件 / 65,124,010 B**：`data/species/mint/mentha_longifolia_expression.tsv`
->   **不进入公开归档包**（`distribution_status: withdrawn_from_public_deposit`），但仍保留在本仓库
+> - **拟归档清单（Deposit B 候选）为 8 个文件 / 65,124,010 B**：`data/species/mint/mentha_longifolia_expression.tsv`
+>   **不进入拟归档清单**（`distribution_status: withdrawn_from_public_deposit`），但仍保留在本仓库
 >   供内部复现与审计。仓库 `totals`（9 / 68,518,847 B）与 `SHA256SUMS.txt`（9 行）**不变**。
+>   **注意**：这 8 个文件里仅 1 个（horsemint）可合法再分发，其余 7 个 `author_authorization_required`
+>   在取得书面许可前**不得公开下载**——「8 个文件」是拟归档清单，不是「8 个可公开文件」。
 > - 逐条条件见 `LICENSES.md`（§0 决策表、§7 **可执行再分发条件表**）；
 >   薄荷 TPM 的可复核溯源见 `PROVENANCE-mint-tpm.md`。
 >
@@ -38,7 +40,7 @@
 | 权威清单 | `MANIFEST.json`（9 条，逐文件 bytes / SHA-256 / 来源 / 许可 / baseline blob） |
 | 机读校验清单 | `SHA256SUMS.txt`（严格 `<64hex><两个空格><data/相对路径>`，LF） |
 | 文件总数 / 总字节 | **9 / 68,518,847 B**（仓库口径，不变） |
-| **公开归档包（Deposit B）** | **8 个文件 / 65,124,010 B**（扣留 `mentha_longifolia_expression.tsv`） |
+| **拟归档清单（Deposit B 候选）** | **8 个文件 / 65,124,010 B**（扣留 `mentha_longifolia_expression.tsv`；其中可公开再分发仅 1 个 horsemint） |
 | 许可说明 | `LICENSES.md`（逐条来源 + §7 可执行再分发条件表，不确定处标「需确认」） |
 | 薄荷 TPM 溯源 | `PROVENANCE-mint-tpm.md`（可复核的完整证据链） |
 

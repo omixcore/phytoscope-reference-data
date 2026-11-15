@@ -37,8 +37,10 @@
 `scripts/**` / 逐文件 `sha256` / `bytes` / `path` / `baseline_blob` 全部不动，
 `sha256sum -c SHA256SUMS.txt` 仍 9/9 OK；`MANIFEST.json` 的 `totals.files = 9`、
 `totals.bytes = 68518847`、`len(files) = 9` 保持不变（`totals_unchanged = true`）。
-**公开归档包为 8 个文件 / 65,124,010 B**（`MANIFEST.json` 的 `public_deposit_scope`）——
-仓库口径与公开包口径是两件事，不得混用。
+**拟归档清单（Deposit B 候选）为 8 个文件 / 65,124,010 B**（`MANIFEST.json` 的
+`public_deposit_scope.candidate_deposit_files`）——仓库口径、拟归档清单口径、可公开再分发口径
+是**三件不同的事**，不得混用。其中**可合法再分发的仅 1 个文件**（horsemint 注释，CC BY 4.0），
+其余 7 个 `author_authorization_required` 在取得书面许可前**不得公开下载**。
 
 ---
 
@@ -66,8 +68,10 @@
 **统计**：`author_authorization_required` **7 条**（#1–#7）、
 `withdrawn_pending_upstream_confirmation` **1 条**（#8）、
 `redistribute` **0 条**（8 条待确认中无可直接分发项）。
-公开归档包 = **8 个文件 / 65,124,010 B**（9 个中扣留 #8，其 3,394,837 B 不计入公开包；
-仓库 `totals` 仍为 9 / 68,518,847 B，**两者不得混用**）。
+拟归档清单（Deposit B 候选）= **8 个文件 / 65,124,010 B**（9 个中扣留 #8，其 3,394,837 B
+不计入拟归档清单；仓库 `totals` 仍为 9 / 68,518,847 B，**两者不得混用**）。
+**其中可合法再分发的仅 1 个**（horsemint，见 §2.3）；#1–#7 的 7 个文件在取得书面许可前
+**不得公开下载**。**「8 个文件」是拟归档的物理清单，不是「8 个可公开文件」。**
 
 ### 0.1 已确证项（不计入 8 条，见 §4 取证正文）
 
@@ -86,8 +90,10 @@
   1 confirmed（CC BY 4.0）+ 8 待确认。
 - **8 条 `needs_confirmation` 未定稿 / 未获权利人书面许可前，不得归并成 CC BY 4.0**。
   即使本批三选一结论已定稿，`license_status` 仍为 `needs_confirmation`，故**仍不得归并**。
-- **Deposit B 公开归档范围 = 8 个文件 / 65,124,010 B**：`data/species/mint/mentha_longifolia_expression.tsv`
-  （#8）**不进入公开包**（`withdrawn_from_public_deposit`），但仍保留在仓库中供内部复现。
+- **Deposit B 拟归档清单（候选）= 8 个文件 / 65,124,010 B**：`data/species/mint/mentha_longifolia_expression.tsv`
+  （#8）**不进入拟归档包**（`withdrawn_from_public_deposit`），但仍保留在仓库中供内部复现。
+  **注意**：这 8 个文件里仅 1 个（horsemint）可合法再分发，其余 7 个 `author_authorization_required`
+  在取得书面许可前**不得公开下载**——「8 个文件」是拟归档清单，不是「8 个可公开文件」。
 - **归档状态**：Zenodo 归档保持「**待发布**」；`{{DATA_DOI}}` / `{{SOFTWARE_DOI}}` /
   `{{PAPER_DOI}}` 占位符**保持未回填**。
 - **Deposit A（软件）license = MIT**（仓库根 `LICENSE`），与数据许可分开。
@@ -185,9 +191,9 @@
     可确证**。本项目不转发任何原始读段，只分发逐基因 TPM 汇总值（94,883 × 4 个统计量，不含序列）。
   - 按保守原则：**暂不公开再分发**。`distribution_status = withdrawn_from_public_deposit`，
     `license_decision = withdrawn_pending_upstream_confirmation`，`author_action_required = A4`。
-- **处置含义（务必按此表述）**：该文件**不进入** Zenodo Deposit B 公开归档包，但**保留在仓库中**
+- **处置含义（务必按此表述）**：该文件**不进入** Zenodo Deposit B 拟归档清单，但**保留在仓库中**
   供内部复现与审计；**未删除、`data/**` 字节未变、`SHA256SUMS.txt` 与 `totals` 未变**。
-  Deposit B 公开包因此为 **8 个文件 / 65,124,010 B**。
+  Deposit B 拟归档清单因此为 **8 个文件 / 65,124,010 B**（其中可公开再分发的仅 1 个 horsemint）。
 - 关联页面（**仅上游基因组/注释来源，非本矩阵的来源**）：<https://doi.org/10.6084/m9.figshare.28457522>
 
 ## 6. WSU Mint Genome Resources（小示例出处，非本仓库文件）
@@ -218,8 +224,10 @@
 > 另：WSU Mint Genome Resources 小示例（KB 级、随主仓保留、**不在本数据仓库**）许可仍需确认，
 > 不列入本表 9 条；如需在论文中引用，需确认其许可。
 >
-> **公开归档包（Deposit B）口径**：上表 9 条中，`mentha_longifolia_expression.tsv` 不进公开包，
-> 故公开包为 **8 个文件 / 65,124,010 B**；仓库 `totals` 仍为 9 / 68,518,847 B。
+> **拟归档清单（Deposit B）口径**：上表 9 条中，`mentha_longifolia_expression.tsv` 不进拟归档清单，
+> 故拟归档清单为 **8 个文件 / 65,124,010 B**；仓库 `totals` 仍为 9 / 68,518,847 B。
+> **其中可合法再分发的仅 1 个**（horsemint，CC BY 4.0）；其余 7 个 `author_authorization_required`
+> 在取得书面许可前**不得公开下载**。**「8 个文件」是拟归档清单，不是「8 个可公开文件」。**
 
 ## 给作者的授权 / 替换请求清单（A2 / A3 / A4，B 类；完整版见 `docs/fcs-data-license-decision.md` §3）
 
@@ -238,7 +246,7 @@
       （可同时说明：不含原始读段，上游注释/基因组均为 CC BY 4.0）；
    ② **拍板按**「仅分发汇总统计量 + 完整引用 SRP565976 + 标注 CC BY 4.0 上游」处理，
       由作者/机构承担该判断；
-   ③ **维持现状**（不进公开包），则 Deposit B 永为 8 个文件。
+   ③ **维持现状**（不进拟归档清单），则 Deposit B 拟归档清单永为 8 个文件。
    **无论哪种，都不要再把 figshare 组装页当作本矩阵的 `source_url`**（已更正，原值在
    `previous_source_url`）。**本次不删除、字节不动**。
 4. **软件侧署名一致性**：确认论文署名作者（Song X, Chen P, Liang F）与 git 提交身份
